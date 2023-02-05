@@ -1,0 +1,18 @@
+GET http://localhost:8080/tyranids
+
+###
+POST http://localhost:8080/tyranids/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "hiveFleet": "Behemoth",
+    "adaptive": "ob-sec monsters",
+    "nullForceOrg": {"models": 3, "unit": "Hive Guard"},
+    "hq": [{
+            "models": 1, "unit": "Hive Tyrant"
+        },
+        {
+            "models": 1, "unit": "Nuerothrope"
+        }],
+    "troop": {"models": 10, "unit": "Termagants"}
+}
