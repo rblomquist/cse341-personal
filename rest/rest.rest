@@ -16,3 +16,23 @@ Content-Type: application/json
         }],
     "troop": {"models": 10, "unit": "Termagants"}
 }
+
+###
+GET https://cse341-personal-qj62.onrender.com/tyranids
+
+###
+POST https://cse341-personal-qj62.onrender.com/tyranids/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "hiveFleet": "Behemoth",
+    "adaptive": "ob-sec monsters",
+    "nullForceOrg": {"models": 3, "unit": "Hive Guard"},
+    "hq": [{
+            "models": 1, "unit": "Hive Tyrant"
+        },
+        {
+            "models": 1, "unit": "Nuerothrope"
+        }],
+    "troop": {"models": 10, "unit": "Termagants"}
+}
