@@ -83,10 +83,10 @@
                   "example": {"models": "X", "unit": "X"}
                 },
                 "hq": {
-                  "example": "any"
+                  "example": {"models": "X", "unit": "X"}
                 },
                 "troop": {
-                  "example": "any"
+                  "example": {"models": "X", "unit": "X"}
                 }
               }
             }
@@ -149,13 +149,13 @@
                   "example": "any"
                 },
                 "nullForceOrg": {
-                  "example": "any"
+                  "example": {"models": "X", "unit": "X"}
                 },
                 "hq": {
-                  "example": "any"
+                  "example": {"models": "X", "unit": "X"}
                 },
                 "troop": {
-                  "example": "any"
+                  "example": {"models": "X", "unit": "X"}
                 }
               }
             }
