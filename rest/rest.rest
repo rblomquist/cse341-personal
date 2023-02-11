@@ -2,7 +2,7 @@ GET http://localhost:3000/tyranids
 
 ###
 
-GET http://localhost:3000/tyranids/63dec637c76357222b143ed0
+GET http://localhost:3000/tyranids/63e59be917e9275c60efa8cd
 
 ###
 POST http://localhost:3000/tyranids/add HTTP/1.1
@@ -48,11 +48,35 @@ Content-Type: application/json
 GET https://cse341-personal-qj62.onrender.com/tyranids
 
 ###
+GET https://cse341-personal-qj62.onrender.com/tyranids/63e59c7017e9275c60efa8ce
+
+###
 POST https://cse341-personal-qj62.onrender.com/tyranids/add HTTP/1.1
 Content-Type: application/json
 
 {
     "hiveFleet": "Behemoth",
+    "adaptive": "ob-sec monsters",
+    "nullForceOrg": {"models": 3, "unit": "Hive Guard"},
+    "hq": [{
+            "models": 1, "unit": "Hive Tyrant"
+        },
+        {
+            "models": 1, "unit": "Nuerothrope"
+        }],
+    "troop": {"models": 10, "unit": "Termagants"}
+}
+
+###
+DELETE https://cse341-personal-qj62.onrender.com/tyranids/delete/63e59c7017e9275c60efa8ce
+
+###
+PUT https://cse341-personal-qj62.onrender.com/tyranids/update/63e59c7017e9275c60efa8ce
+Content-Type: application/json
+
+
+{
+    "hiveFleet": "Leviathan",
     "adaptive": "ob-sec monsters",
     "nullForceOrg": {"models": 3, "unit": "Hive Guard"},
     "hq": [{

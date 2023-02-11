@@ -10,7 +10,7 @@ const getAll = (req, res) => {
     .find()
     .toArray().then(( err, lists) => {
       if(err) {
-        res.status(400).json(err);
+        res.status(500).json(err);
       }
     res.status(200).json(lists);
   });
@@ -28,7 +28,7 @@ const getAll = (req, res) => {
       .find({ _id: userId })
       .toArray().then((err, lists) => {
         if (err) {
-          res.status(400).json(err);
+          res.status(500).json(err);
         }
         res.status(200).json(lists);
       });
@@ -66,7 +66,7 @@ const deleteList = async (req, res) => {
     .collection("Tyranids")
     .deleteOne({ _id: userId });
   if(deleteArmy.acknowledged) {
-    res.status(204).send()
+    res.status(200).send()
   }
   else {
     res.status(500).json("Failed to delete the army")
