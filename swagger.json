@@ -80,7 +80,7 @@
                   "example": "any"
                 },
                 "nullForceOrg": {
-                  "example": "{'models': 'X', 'unit': 'X'}"
+                  "example": {"models": "X", "unit": "X"}
                 },
                 "hq": {
                   "example": "any"
