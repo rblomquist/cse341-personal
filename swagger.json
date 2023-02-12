@@ -25,16 +25,13 @@
     "/tyranids/": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
           },
-          "400": {
-            "description": "Bad Request"
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
@@ -42,9 +39,6 @@
     "/tyranids/{id}": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "id",
@@ -59,6 +53,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
@@ -87,6 +84,21 @@
                 },
                 "troop": {
                   "example": {"models": "X", "unit": "X"}
+                },
+                "elite": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "fastAttack": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "heavySupport": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "flyer": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "transport": {
+                  "example": {"models": "X", "unit": "X"}
                 }
               }
             }
@@ -114,8 +126,8 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
+          "200": {
+            "description": "OK"
           },
           "400": {
             "description": "Bad Request"
@@ -155,6 +167,188 @@
                   "example": {"models": "X", "unit": "X"}
                 },
                 "troop": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "elite": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "fastAttack": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "heavySupport": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "flyer": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "transport": {
+                  "example": {"models": "X", "unit": "X"}
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/wolves/": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/wolves/{id}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/wolves/add": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "nullForceOrg": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "hq": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "troop": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "elite": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "fastAttack": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "heavySupport": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "flyer": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "transport": {
+                  "example": {"models": "X", "unit": "X"}
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/wolves/delete/{id}": {
+      "delete": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/wolves/update/{id}": {
+      "put": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "nullForceOrg": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "hq": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "troop": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "elite": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "fastAttack": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "heavySupport": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "flyer": {
+                  "example": {"models": "X", "unit": "X"}
+                },
+                "transport": {
                   "example": {"models": "X", "unit": "X"}
                 }
               }

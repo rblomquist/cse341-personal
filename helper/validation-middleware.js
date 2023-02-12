@@ -5,8 +5,13 @@ const validate = async (req, res, next) => {
         "hiveFleet": "required|string",
         "adaptive": "required|string",
         "nullForceOrg": "string",
-        "hq": "string",
-        "troop": "string"
+        "hq": "required|string",
+        "troop": "string",
+        "elite": "string",
+        "fastAttack": "string",
+        "heavySupport": "string",
+        "flyer": "string",
+        "transport": "string"
     };
 
     await validator(req.body, validationRule, {}, (err, status) => {

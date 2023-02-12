@@ -1,3 +1,5 @@
+# TYRANID REQUESTS
+
 GET http://localhost:3000/tyranids
 
 ###
@@ -18,7 +20,8 @@ Content-Type: application/json
         {
             "models": 1, "unit": "Nuerothrope"
         }],
-    "troop": {"models": 10, "unit": "Termagants"}
+    "troop": {"models": 10, "unit": "Termagants"},
+    "elite": {"models": 5, "unit": "Genestealers"}
 }
 
 ###
@@ -86,4 +89,90 @@ Content-Type: application/json
             "models": 1, "unit": "Nuerothrope"
         }],
     "troop": {"models": 10, "unit": "Termagants"}
+}
+
+###
+# WOLVES REQUESTS
+
+GET http://localhost:3000/wolves
+
+###
+GET http://localhost:3000/wolves/63e844f121360d41328de1e8
+
+###
+POST http://localhost:3000/wolves/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "hq": [{
+            "models": 1, "unit": "Captain"
+        },
+        {
+            "models": 1, "unit": "Chaplain"
+        }],
+    "troop": {"models": 5, "unit": "Assault Intercessors"},
+    "elite": {"models": 5, "unit": "Terminators"},
+    "heavySupport": {"models": 1, "unit": "Land Raider"}
+}
+
+###
+DELETE http://localhost:3000/wolves/delete/63e844f121360d41328de1e8
+
+###
+PUT http://localhost:3000/wolves/update/63e844f121360d41328de1e8 HTTP/1.1
+Content-Type: application/json
+
+{
+    "hq": [{
+            "models": 1, "unit": "Captain"
+        },
+        {
+            "models": 1, "unit": "Chaplain"
+        }],
+    "troop": {"models": 5, "unit": "Assault Intercessors"},
+    "elite": {"models": 5, "unit": "Terminators"},
+    "heavySupport": {"models": 1, "unit": "Land Raider"},
+    "transport": {"models": 1, "unit": "Drop Pod"}
+}
+
+###
+GET https://cse341-personal-qj62.onrender.com/wolves
+
+###
+GET https://cse341-personal-qj62.onrender.com/wolves/63e59c7017e9275c60efa8ce
+
+###
+POST https://cse341-personal-qj62.onrender.com/wolves/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "hq": [{
+            "models": 1, "unit": "Captain"
+        },
+        {
+            "models": 1, "unit": "Chaplain"
+        }],
+    "troop": {"models": 5, "unit": "Assault Intercessors"},
+    "elite": {"models": 5, "unit": "Terminators"},
+    "heavySupport": {"models": 1, "unit": "Land Raider"},
+}
+
+###
+DELETE https://cse341-personal-qj62.onrender.com/wolves/delete/63e59c7017e9275c60efa8ce
+
+###
+PUT https://cse341-personal-qj62.onrender.com/wolves/update/63e59c7017e9275c60efa8ce
+Content-Type: application/json
+
+{
+    "hq": [{
+            "models": 1, "unit": "Captain"
+        },
+        {
+            "models": 1, "unit": "Chaplain"
+        }],
+    "troop": {"models": 5, "unit": "Assault Intercessors"},
+    "elite": {"models": 5, "unit": "Terminators"},
+    "heavySupport": {"models": 1, "unit": "Land Raider"},
+    "transport": {"models": 1, "unit": "Drop Pod"}
 }

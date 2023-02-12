@@ -40,7 +40,12 @@ const getAll = (req, res) => {
       adaptive: req.body.adaptive,
       nullForceOrg: req.body.nullForceOrg,
       hq: req.body.hq,
-      troop: req.body.troop
+      troop: req.body.troop,
+      elite: req.body.elite,
+      fastAttack: req.body.fastAttack,
+      heavySupport: req.body.heavySupport,
+      flyer: req.body.flyer,
+      transport: req.body.transport
     }
     const response = await mongodb
       .getDb()
@@ -83,7 +88,12 @@ const updateList = async (req, res) => {
     adaptive: req.body.adaptive,
     nullForceOrg: req.body.nullForceOrg,
     hq: req.body.hq,
-    troop: req.body.troop
+    troop: req.body.troop,
+    elite: req.body.elite,
+    fastAttack: req.body.fastAttack,
+    heavySupport: req.body.heavySupport,
+    flyer: req.body.flyer,
+    transport: req.body.transport
   }
   const update = await mongodb
     .getDb()
