@@ -4,7 +4,7 @@ GET http://localhost:3000/tyranids
 
 ###
 
-GET http://localhost:3000/tyranids/63e59be917e9275c60efa8cd
+GET http://localhost:3000/tyranids/63e851edd0c1826c5d0fa436
 
 ###
 POST http://localhost:3000/tyranids/add HTTP/1.1
@@ -20,8 +20,7 @@ Content-Type: application/json
         {
             "models": 1, "unit": "Nuerothrope"
         }],
-    "troop": {"models": 10, "unit": "Termagants"},
-    "elite": {"models": 5, "unit": "Genestealers"}
+    "troop": {"models": 10, "unit": "Termagants"}
 }
 
 ###
@@ -41,7 +40,8 @@ Content-Type: application/json
         {
             "models": 1, "unit": "Nuerothrope"
         }],
-    "troop": {"models": 10, "unit": "Termagants"}
+    "troop": {"models": 10, "unit": "Termagants"},
+    "elite": {"models": 5, "unit": "Genestealers"}
 }
 
 
@@ -88,7 +88,8 @@ Content-Type: application/json
         {
             "models": 1, "unit": "Nuerothrope"
         }],
-    "troop": {"models": 10, "unit": "Termagants"}
+    "troop": {"models": 10, "unit": "Termagants"},
+    "elite": {"models": 5, "unit": "Genestealers"}
 }
 
 ###
@@ -139,7 +140,7 @@ Content-Type: application/json
 GET https://cse341-personal-qj62.onrender.com/wolves
 
 ###
-GET https://cse341-personal-qj62.onrender.com/wolves/63e59c7017e9275c60efa8ce
+GET https://cse341-personal-qj62.onrender.com/wolves/63e84f7bd0c1826c5d0fa435
 
 ###
 POST https://cse341-personal-qj62.onrender.com/wolves/add HTTP/1.1
@@ -154,14 +155,14 @@ Content-Type: application/json
         }],
     "troop": {"models": 5, "unit": "Assault Intercessors"},
     "elite": {"models": 5, "unit": "Terminators"},
-    "heavySupport": {"models": 1, "unit": "Land Raider"},
+    "heavySupport": {"models": 1, "unit": "Land Raider"}
 }
 
 ###
-DELETE https://cse341-personal-qj62.onrender.com/wolves/delete/63e59c7017e9275c60efa8ce
+DELETE https://cse341-personal-qj62.onrender.com/wolves/delete/63e84f7bd0c1826c5d0fa435
 
 ###
-PUT https://cse341-personal-qj62.onrender.com/wolves/update/63e59c7017e9275c60efa8ce
+PUT https://cse341-personal-qj62.onrender.com/wolves/update/63e84f7bd0c1826c5d0fa435
 Content-Type: application/json
 
 {

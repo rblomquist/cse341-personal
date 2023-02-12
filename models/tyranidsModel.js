@@ -2,37 +2,43 @@ const { response } = require("express");
 const { ObjectId } = require("mongodb");
 const mongodb = require("../db/connect");
 
-const getAll = (req, res) => {
-  mongodb
+const getAll = async (req, res) => {
+  const all = await mongodb
     .getDb()
     .db()
     .collection('Tyranids')
-    .find()
-    .toArray().then(( err, lists) => {
-      if(err) {
-        res.status(500).json(err);
-      }
-    res.status(200).json(lists);
-  });
+    .find();
+
+  if(all) {
+    all.toArray().then((lists) => {
+      res.status(200).json(lists);
+    });
+  }
+  else {
+    res.status(500).json("error");
+  };
 };
 
-  const getSingle = (req, res) => {
+  const getSingle = async (req, res) => {
     if (!ObjectId.isValid(req.params.id)) {
       res.status(400).json("Must use valid contact ID to find your army")
     };
     const userId = new ObjectId(req.params.id);
-    mongodb
+    const single = await mongodb
       .getDb()
       .db()
       .collection("Tyranids")
-      .find({ _id: userId })
-      .toArray().then((err, lists) => {
-        if (err) {
-          res.status(500).json(err);
-        }
+      .find({ _id: userId });
+    
+      if(single){
+      single.toArray().then((lists) => {
         res.status(200).json(lists);
       });
-  };
+    }
+    else {
+      res.status(500).json("error");
+    };
+};
   
   const addList = async (req, res) => {
     const army = {
