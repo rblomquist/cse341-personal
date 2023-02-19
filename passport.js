@@ -12,11 +12,11 @@ module.exports = function(passport) {
         console.log(profile)
     }));
 
-    // passport.serializeUser(function(user, done) {
-    //     done(null, user.id);
-    // });
+    passport.serializeUser(function(user, done) {
+        done(null, user.id);
+    });
 
-    // passport.deserializeUser(function(id, done) {
-    //     mongodb.getDb().db().find({ _id: id })
-    // })
+    passport.deserializeUser(function(id, done) {
+        mongodb.getDb().db().find({ _id: id })
+    })
 }
