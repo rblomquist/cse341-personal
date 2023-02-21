@@ -7,11 +7,11 @@ const wolves = require("./wolves");
 router.get('/', (req, res) => {
     // res.send('Home Page');
     res.send(req.oidc.isAuthenticated() ? "logged in" : "Logged out");
+    console.log(req.body);
   });
 
 
-router.use("/tyranids", (req, res) => {
-    req.oidc.isAuthenticated() ? tyranids : res.redirect('/') });
+router.use("/tyranids", tyranids);
 router.use("/wolves", wolves);
 // router.use("/auth", auth);
 
