@@ -5,7 +5,7 @@ const wolves = require("./wolves");
 
 
 router.get('/', (req, res) => {
-    res.send('Home Page')
+    // res.send('Home Page');
     res.send(req.oidc.isAuthenticated() ? "logged in" : "Logged out");
   });
 
