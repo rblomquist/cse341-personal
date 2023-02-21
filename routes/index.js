@@ -6,20 +6,9 @@ const wolves = require("./wolves");
 
 router.get('/', (req, res) => {
     res.send('Home Page')
-    // res.send(req.oidc.isAuthenticated() ? "logged in" : "Logged out");
+    res.send(req.oidc.isAuthenticated() ? "logged in" : "Logged out");
   });
-// router.get('/login', (req, res) =>
-//   res.oidc.login({
-//     returnTo: '/profile',
-//     authorizationParams: {
-//       redirect_uri: 'http://localhost:3000',
-//     },
-//   })
-// );
-router.get('/callback', (req, res, next) => {
-  res.redirect("https://youtube.com");
-  next()
-})
+
 
 router.use("/tyranids", tyranids);
 router.use("/wolves", wolves);
