@@ -20,6 +20,7 @@
     "mongodb": "^5.0.0",
     "passport": "^0.6.0",
     "passport-google-oauth20": "^2.0.0",
+    "swagger-ui": "^4.15.5",
     "swagger-ui-express": "^4.6.0",
     "validatorjs": "^3.22.1"
   },

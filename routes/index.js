@@ -10,7 +10,8 @@ router.get('/', (req, res) => {
   });
 
 
-router.use("/tyranids", tyranids);
+router.use("/tyranids", (req, res) => {
+    req.oidc.isAuthenticated() ? tyranids : res.redirect('/') });
 router.use("/wolves", wolves);
 // router.use("/auth", auth);
 
