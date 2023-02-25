@@ -4,14 +4,14 @@ const validate = (req, res, next) => {
     const validationRule = {
         "hiveFleet": "required|string",
         "adaptive": "required|string",
-        "nullForceOrg": "string",
-        "hq": "required|string",
-        "troop": "string",
-        "elite": "string",
-        "fastAttack": "string",
-        "heavySupport": "string",
-        "flyer": "string",
-        "transport": "string"
+        "nullForceOrg": "object",
+        "hq": "required|object",
+        "troop": "object",
+        "elite": "oject",
+        "fastAttack": "object",
+        "heavySupport": "object",
+        "flyer": "object",
+        "transport": "object"
     };
 
     validator(req.body, validationRule, {}, (err, status) => {
