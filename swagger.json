@@ -77,28 +77,28 @@
                   "example": "any"
                 },
                 "nullForceOrg": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "hq": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "troop": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "elite": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "fastAttack": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "heavySupport": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "flyer": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "transport": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 }
               }
             }
@@ -161,28 +161,28 @@
                   "example": "any"
                 },
                 "nullForceOrg": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "hq": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "troop": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "elite": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "fastAttack": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "heavySupport": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "flyer": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "transport": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 }
               }
             }
@@ -250,28 +250,28 @@
               "type": "object",
               "properties": {
                 "nullForceOrg": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "hq": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "troop": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "elite": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "fastAttack": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "heavySupport": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "flyer": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "transport": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 }
               }
             }
@@ -328,28 +328,28 @@
               "type": "object",
               "properties": {
                 "nullForceOrg": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "hq": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "troop": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "elite": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "fastAttack": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "heavySupport": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "flyer": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 },
                 "transport": {
-                  "example": "any"
+                  "example": {"unit": "X", "models": "X"}
                 }
               }
             }
