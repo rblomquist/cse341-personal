@@ -6,8 +6,8 @@ const { requiresAuth } = require('express-openid-connect');
 
 router.get("/", model.getAll);
 router.get("/:id", model.getSingle);
-router.post("/add", requiresAuth(), validation.validate, model.addList);
+router.post("/add", requiresAuth(), validation.tyranidsValidate, model.addList);
 router.delete("/delete/:id", requiresAuth(), model.deleteList);
-router.put("/update/:id", requiresAuth(), validation.validate, model.updateList);
+router.put("/update/:id", requiresAuth(), validation.tyranidsValidate, model.updateList);
 
 module.exports = router;
