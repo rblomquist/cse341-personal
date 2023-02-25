@@ -1,6 +1,6 @@
 const validator = require("./validate");
 
-const validate = async (req, res, next) => {
+const validate = (req, res, next) => {
     const validationRule = {
         "hiveFleet": "required|string",
         "adaptive": "required|string",
@@ -14,7 +14,7 @@ const validate = async (req, res, next) => {
         "transport": "string"
     };
 
-    await validator(req.body, validationRule, {}, (err, status) => {
+    validator(req.body, validationRule, {}, (err, status) => {
         if (!status) {
             res.status(412)
                 .send({
