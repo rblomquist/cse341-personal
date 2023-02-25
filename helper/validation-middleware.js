@@ -25,7 +25,7 @@ const validate = async (req, res, next) => {
         } else {
             next();
         }
-    }).catch( err => console.log(err))
+    })
 }
 
 module.exports = {
